@@ -20,7 +20,7 @@ class ApplicationController < Sinatra::Base
     #binding.pry
     @article = Article.new(params)
     @article.save
-  erb :articles
+  erb :'articles/:id'
   end
   
 end
