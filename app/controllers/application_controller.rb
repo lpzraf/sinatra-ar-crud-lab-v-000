@@ -23,6 +23,11 @@ class ApplicationController < Sinatra::Base
   erb :articles
   end
   
+  get '/articles' do
+    erb :index
+  end
+  
+  
   get '/articles/:id' do
     erb :show
   end
